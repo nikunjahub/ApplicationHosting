@@ -11,6 +11,7 @@ namespace FactoryPatternDemo
         static void Main(string[] args)
         {
             Console.WriteLine("enter mobile name");
+            Console.WriteLine("Enter Father Name");
             string result=Console.ReadLine();
             IMobileDetail type=MobileInformation.MobileType(result);
             Console.WriteLine(type.Name());
